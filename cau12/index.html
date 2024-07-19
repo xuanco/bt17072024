@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dãy số giảm dần</h1>
+    <div id="number-output"></div>
+
+    <script>
+        
+        let numberResult = '';
+        for (let i = 10; i >= 0; i--) {
+            numberResult += i + ' ';
+        }
+        document.getElementById('number-output').innerText = 'Dãy số: ' + numberResult;
+    </script>
+</body>
+</html>

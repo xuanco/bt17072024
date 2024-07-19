@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> let a = prompt("Nhập vào giá trị bắt đầu (a):");
+        let b = prompt("Nhập vào giá trị kết thúc (b):");
+
+        a = parseInt(a);
+        b = parseInt(b);
+
+        
+        if (!isNaN(a) && !isNaN(b) && a <= b) {
+            let sum = 0; 
+            for (let i = a; i <= b; i++) {
+                if (i % 5 === 2) { 
+                    sum += i; 
+                }
+            }
+            document.write("Tổng các số chia 5 dư 2 từ " + a + " đến " + b + " là: " + sum);
+        } else {
+            document.write("Vui lòng nhập các giá trị số hợp lệ và đảm bảo a <= b.");
+        }</script>
+</body>
+</html>

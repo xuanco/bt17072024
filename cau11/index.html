@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dãy số và Điều kiện</h1>
+    <div id="number-output"></div>
+    <div id="condition-output"></div>
+
+    <script>
+        
+        let numberResult = '';
+        for (let i = 0; i <= 50; i += 5) {
+            numberResult += i + ' ';
+        }
+        document.getElementById('number-output').innerText = 'Dãy số: ' + numberResult;
+
+        
+        let number = 10; 
+        let conditionResult;
+
+        if (number > 0) {
+            conditionResult = 'Số là dương';
+        } else if (number < 0) {
+            conditionResult = 'Số là âm';
+        } else {
+            conditionResult = 'Số là 0';
+        }
+
+        document.getElementById('condition-output').innerText = 'Kết quả kiểm tra: ' + conditionResult;
+    </script>
+</body>
+</html>
